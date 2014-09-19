@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="A1" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <Append>true</Append>
+        <File>/export/logs/cucumber-example/application.log</File>
+        <encoder>
+            <pattern>[%d{dd-MM-yyyy HH:mm:ss,Brazil/East}] %p %c - %m%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>/export/logs_gz/cucumber-example/application.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
+            <maxHistory>3</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <logger name="org.apache.http" level="ERROR" />
+    <logger name="org.hibernate" level="WARN" />
+
+    <root level="INFO">
+        <appender-ref ref="A1" />
+    </root>
+
+</configuration>
