@@ -40,3 +40,4 @@ Driver info: driver.version: FirefoxDriver
 - [Selenium WebDriver](http://docs.seleniumhq.org/docs/03_webdriver.jsp#introducing-the-selenium-webdriver-api-by-example)
 - Selenium Take Screenshots [Link1](https://techblog.polteq.com/en/take-screenshots/) [Link2](https://cucumber.io/docs/reference#after)
 - [WebDriver: Explicit and Implicit Waits](http://www.seleniumhq.org/docs/04_webdriver_advanced.jsp)
+- [Cucumber configuration](http://zsoltfabok.com/blog/2012/09/cucumber-jvm-hooks/)
