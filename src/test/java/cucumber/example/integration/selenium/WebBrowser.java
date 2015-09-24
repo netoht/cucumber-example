@@ -1,11 +1,13 @@
 package cucumber.example.integration.selenium;
 
-import java.util.concurrent.*;
+import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.collections4.*;
-import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.*;
-import org.openqa.selenium.support.ui.*;
+import org.apache.commons.collections4.CollectionUtils;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebBrowser {
 

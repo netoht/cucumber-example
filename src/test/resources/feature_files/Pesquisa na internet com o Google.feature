@@ -1,5 +1,6 @@
-#language:pt
-#author:@netoht
+# language: pt
+# author: @netoht
+
 Funcionalidade: Pesquisa na internet com o Google
 
   Esquema do Cenario: Usuário pesquisa sobre carros no google

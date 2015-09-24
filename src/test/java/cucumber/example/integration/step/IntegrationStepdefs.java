@@ -1,19 +1,23 @@
 package cucumber.example.integration.step;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-import java.util.concurrent.*;
+import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.*;
-import org.springframework.test.context.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.springframework.test.context.ContextConfiguration;
 
-import cucumber.api.java.*;
-import cucumber.api.java.pt.*;
-import cucumber.example.*;
-import cucumber.example.integration.selenium.*;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import cucumber.api.java.pt.Dado;
+import cucumber.api.java.pt.Então;
+import cucumber.api.java.pt.Quando;
+import cucumber.example.Application;
+import cucumber.example.integration.selenium.WebBrowser;
 
 @ContextConfiguration(classes = Application.class)
-public class IntegrationStep {
+public class IntegrationStepdefs {
 
     private final WebBrowser browser = new WebBrowser();
 
